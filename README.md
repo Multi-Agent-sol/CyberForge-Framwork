@@ -1,10 +1,3 @@
-![GitHub License](https://img.shields.io/github/license/happyapplehorse/Cyberforge)
-![PyPI - Version](https://img.shields.io/pypi/v/Cyberforge)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/happyapplehorse/Cyberforge/mkdocs.yml?logo=materialformkdocs&label=docs)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/happyapplehorse/Cyberforge/python-publish.yml?logo=pypi)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/happyapplehorse/Cyberforge/codecov.yml?logo=pytest&label=test)
-[![codecov](https://codecov.io/gh/happyapplehorse/Cyberforge/graph/badge.svg?token=01PNCN77SX)](https://codecov.io/gh/happyapplehorse/Cyberforge)
-![Static Badge](https://img.shields.io/badge/dependencies-zero-brightgreen)
 
 # Cyberforge
 <p align="center">
