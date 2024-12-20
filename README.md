@@ -35,7 +35,7 @@ tool easily, facilitating smooth collaboration and integration with other tools.
 
 The structure of Cyberforge is as follows:
 <p align="center">
-  <img src="https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/Cyberforge/Cyberforge_hierarchical_structure.png" width="600" alt="Cyberforge Hierarchical Structure">
+  <img src="https://github.com/Multi-Agent-sol/CyberForge-Framwork/blob/main/docs/JUVmMyEC_400x400.jpg" width="600" alt="Cyberforge Hierarchical Structure">
 </p>
 
 ```
