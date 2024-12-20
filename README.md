@@ -110,4 +110,4 @@ Callbacks can be added at various stages of a task, such as: task start, task co
 encountering exceptions, task termination, Commander ending, etc.
 
 # License
-This project is licensed under the [Apache 2.0](./LICENSE).
+This project is licensed under the [MIT License](./LICENSE).
