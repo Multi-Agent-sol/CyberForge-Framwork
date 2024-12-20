@@ -33,7 +33,6 @@ In constructing workflows, Cyberforge possesses the following features:
 Cyberforge emphasizes universality, operating independently of any tools, specific interfaces, or forms, and is not coupled with any tool. This allows it to invoke any
 tool easily, facilitating smooth collaboration and integration with other tools.
 
-The structure of Cyberforge is as follows:
 <p align="center">
   <img src="https://github.com/Multi-Agent-sol/CyberForge-Framwork/blob/main/docs/JUVmMyEC_400x400.jpg" width="600" alt="Cyberforge Hierarchical Structure">
 </p>
