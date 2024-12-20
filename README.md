@@ -1,7 +1,7 @@
 
-# Cyberforge
+# CyberForge
 <p align="center">
-  <img src="https://github.com/happyapplehorse/happyapplehorse-assets/blob/main/imgs/Cyberforge_logo_transparent.png" alt="Logo">
+  <img src="https://github.com/Multi-Agent-sol/CyberForge-Framwork/blob/main/docs/1500x500%20(3).jpg" alt="Logo">
 </p >
 
 Cyberforge is a lightweight framework for building agents, with no third-party dependencies. Its features are universality and complete customizability.
