@@ -27,10 +27,10 @@ from __future__ import annotations
 import re
 from typing import Self
 
-from ._exceptions import AgereUtilsError
+from ._exceptions import CyberforgeUtilsError
 
 
-class PromptTemplateError(AgereUtilsError):
+class PromptTemplateError(CyberforgeUtilsError):
     """Raised when encountering an error related to the prompt template."""
 
 

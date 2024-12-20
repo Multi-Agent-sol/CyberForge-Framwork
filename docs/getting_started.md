@@ -1,25 +1,25 @@
-In this tutorial, we will use Agere to build a dialogue agent based on the OpenAI GPT model, which can conduct multiple rounds
+In this tutorial, we will use Cyberforge to build a dialogue agent based on the OpenAI GPT model, which can conduct multiple rounds
 of conversation and call tools (for the complete code, please refer to the full example at the end).
 
 The running process and flowchat of this example are shown as follows:
 <figure markdown>
-  ![flowchart](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/agere/agere_getting_started_animation.gif)
+  ![flowchart](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/Cyberforge/Cyberforge_getting_started_animation.gif)
   <figcaption>The running process of the dialogue agent.</figcaption>
 </figure>
 
-Through this tutorial, you will learn the basic process of building an agent with Agere and understand the key parts of Agere.
+Through this tutorial, you will learn the basic process of building an agent with Cyberforge and understand the key parts of Cyberforge.
 
 
 ## Creating The First Job
 
-When building an agent with Agere, we just need to break down the task flow into units, considering what the current task should do.
+When building an agent with Cyberforge, we just need to break down the task flow into units, considering what the current task should do.
 
 Firstly, of course, we need to send a message to GPT and get a reply.
 
 So let's define our first Job, like this:
 
 ```python hl_lines="1 4 8 10-14"
-from agere.commander import PASS_WORD, Job, tasker
+from Cyberforge.commander import PASS_WORD, Job, tasker
 
 
 class ChatJob(Job):
@@ -102,16 +102,16 @@ The messages replied by the GPT model may be regular messages sent to the user o
 GPT can only send one of these two types of messages, but we hope to allow GPT to send both types of messages simultaneously,
 that is, to send messages to the user while invoking tools. We can add a `to_user` parameter to the function call parameters
 to implement this feature [see the complete example](#complete-example). The `async_dispatcher_tools_call_for_openai` function
-provided in Agere's toolset can automatically parse the part sent to the user and the part for tool invocation from the replied
+provided in Cyberforge's toolset can automatically parse the part sent to the user and the part for tool invocation from the replied
 messages in a streaming manner.
 
-In this handler, we use tools provided by Agere to parse the information sent to the user and the tool invocation information,
+In this handler, we use tools provided by Cyberforge to parse the information sent to the user and the tool invocation information,
 and send the parsed results to the respective processing functions for handling.
 
 ```python hl_lines="1 14 23-24"
-from agere.commander import PASS_WORD, handler
-from agere.utils.dispatcher import async_dispatcher_tools_call_for_openai
-from agere.utils.llm_async_converters import LLMAsyncAdapter
+from Cyberforge.commander import PASS_WORD, handler
+from Cyberforge.utils.dispatcher import async_dispatcher_tools_call_for_openai
+from Cyberforge.utils.llm_async_converters import LLMAsyncAdapter
 
 
 class ResponseHandler:
@@ -285,7 +285,7 @@ Now, we have completed every step of building this dialogue agent. Let's create 
 Create a commander like this and hand over the first Job to it:
 
 ```python hl_lines="1 5 12-13"
-from agere.commander import CommanderAsync
+from Cyberforge.commander import CommanderAsync
 
 
 if __name__ == "__main__":
@@ -313,7 +313,7 @@ and `function_call_handler`). We used an `at_job_end` callback in `ChatJob`, and
 
 The operational flow of this agent is as shown in the following diagram.
 <figure markdown>
-  ![flowchart](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/agere/agere_getting_started_flowchart.png)
+  ![flowchart](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/Cyberforge/Cyberforge_getting_started_flowchart.png)
   <figcaption>The flowchat of the dialogue agent.</figcaption>
 </figure>
 

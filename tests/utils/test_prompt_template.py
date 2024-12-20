@@ -1,6 +1,6 @@
 import pytest
 
-from agere.utils.prompt_template import (
+from Cyberforge.utils.prompt_template import (
     PromptTemplateError,
     PromptTemplate,
     render_prompt,

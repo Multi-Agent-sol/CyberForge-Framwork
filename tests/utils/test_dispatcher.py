@@ -1,6 +1,6 @@
 import json
 
-from agere.utils.dispatcher import async_dispatcher_tools_call_for_openai
+from Cyberforge.utils.dispatcher import async_dispatcher_tools_call_for_openai
 
 
 async def test_dispatcher(async_openai_response):

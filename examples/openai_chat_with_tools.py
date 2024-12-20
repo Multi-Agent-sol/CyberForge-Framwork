@@ -2,9 +2,9 @@ import asyncio
 import json
 from typing import Iterable, AsyncIterable
 
-from agere.commander import PASS_WORD, CommanderAsync, Callback, BasicJob, Job, tasker, handler
-from agere.utils.dispatcher import async_dispatcher_tools_call_for_openai
-from agere.utils.llm_async_converters import LLMAsyncAdapter, CallbackDict
+from Cyberforge.commander import PASS_WORD, CommanderAsync, Callback, BasicJob, Job, tasker, handler
+from Cyberforge.utils.dispatcher import async_dispatcher_tools_call_for_openai
+from Cyberforge.utils.llm_async_converters import LLMAsyncAdapter, CallbackDict
 from openai import OpenAI
 from openai.types.chat import ChatCompletionMessageParam
 

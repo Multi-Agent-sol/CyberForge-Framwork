@@ -2,7 +2,7 @@ import pytest
 import threading
 from unittest.mock import Mock
 
-from agere.commander import CallbackDict, Callback, Job, CommanderAsync, tasker, PASS_WORD
+from Cyberforge.commander import CallbackDict, Callback, Job, CommanderAsync, tasker, PASS_WORD
 
 
 @pytest.fixture

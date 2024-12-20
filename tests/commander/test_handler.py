@@ -2,8 +2,8 @@ import pytest
 import threading
 from unittest.mock import Mock, AsyncMock
 
-from agere.commander import CallbackDict, Callback, CommanderAsync, PASS_WORD, handler
-from agere.commander._commander import HandlerCoroutine
+from Cyberforge.commander import CallbackDict, Callback, CommanderAsync, PASS_WORD, handler
+from Cyberforge.commander._commander import HandlerCoroutine
 
 
 @pytest.fixture

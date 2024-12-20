@@ -1,8 +1,8 @@
-site_name: Agere
+site_name: Cyberforge
 copyright: Copyright (c) 2023 Xueao Chao
 
-repo_url: https://github.com/happyapplehorse/agere
-repo_name: happyapplehorse/agere
+repo_url: https://github.com/happyapplehorse/Cyberforge
+repo_name: happyapplehorse/Cyberforge
 
 theme:
   name: "material"

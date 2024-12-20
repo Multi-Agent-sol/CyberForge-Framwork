@@ -1,8 +1,8 @@
 import pytest
 from unittest.mock import Mock, AsyncMock
 
-from agere.commander._commander import TaskNode
-from agere.commander._exceptions import AttributeNotSetError
+from Cyberforge.commander._commander import TaskNode
+from Cyberforge.commander._exceptions import AttributeNotSetError
 
 
 @pytest.fixture

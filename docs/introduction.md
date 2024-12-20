@@ -1,13 +1,13 @@
 # Installation
 
-The core functionality of agere has no third-party dependencies, and you can use
+The core functionality of Cyberforge has no third-party dependencies, and you can use
 ```shell
-pip install agere
+pip install Cyberforge
 ```
-to install agere.
+to install Cyberforge.
 
-Some addons of agere have third-party dependencies, and you can use
+Some addons of Cyberforge have third-party dependencies, and you can use
 ```shell
-pip install agere[addons]
+pip install Cyberforge[addons]
 ```
 to utilize all the addons' features.

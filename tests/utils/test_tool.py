@@ -1,7 +1,7 @@
 import json
 import pytest
 
-from agere.utils.tool import ToolsManagerInterface, ToolMetadata
+from Cyberforge.utils.tool import ToolsManagerInterface, ToolMetadata
 
 
 class TestTool:
@@ -305,7 +305,7 @@ class TestTool:
         assert callable_tool(2) == 2
         assert callable_method_example(2, 5) == 7
         assert callable_say_hello_example.__name__ == "tool_say_hello_example"
-        assert callable_say_hello_example("agere") == "Hi, agere!"
+        assert callable_say_hello_example("Cyberforge") == "Hi, Cyberforge!"
 
     def test_wrap_tools_to_bead(
         self,

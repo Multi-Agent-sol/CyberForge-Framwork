@@ -2,7 +2,7 @@ import pytest
 from itertools import cycle, islice
 from unittest.mock import patch
 
-from agere.addons.text_splitter import SemanticTextSplitter
+from Cyberforge.addons.text_splitter import SemanticTextSplitter
 
 
 @pytest.fixture

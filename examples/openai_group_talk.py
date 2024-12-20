@@ -4,7 +4,7 @@
 # For features that allow users to participate in chats in real-time,
 # UI support is needed to separate chat messages from user input.
 # For a more complete implementation of actual group chat functionalities,
-# you can refer to gptui, a GPT conversational TUI project powered by agere.
+# you can refer to gptui, a GPT conversational TUI project powered by Cyberforge.
 """Attention:
 This script requires you to press Ctrl+C to stop running.
 Please terminate the program promptly to avoid wasting tokens.
@@ -13,8 +13,8 @@ Please terminate the program promptly to avoid wasting tokens.
 import random
 from typing import Iterable, AsyncIterable
 
-from agere.commander import PASS_WORD, CommanderAsync, Job, handler, tasker
-from agere.utils.llm_async_converters import LLMAsyncAdapter
+from Cyberforge.commander import PASS_WORD, CommanderAsync, Job, handler, tasker
+from Cyberforge.utils.llm_async_converters import LLMAsyncAdapter
 from openai import OpenAI
 from openai.types.chat import ChatCompletionMessageParam
 

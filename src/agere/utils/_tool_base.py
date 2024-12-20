@@ -3,10 +3,10 @@ from collections.abc import Callable, Coroutine
 from dataclasses import dataclass
 from typing import Any, AsyncIterator, AsyncGenerator, Literal
 
-from ._exceptions import AgereUtilsError
+from ._exceptions import CyberforgeUtilsError
 
 
-class ParseResponseError(AgereUtilsError):
+class ParseResponseError(CyberforgeUtilsError):
     """Raised when parsing response encounters an error."""
 
 

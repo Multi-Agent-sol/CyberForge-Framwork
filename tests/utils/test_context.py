@@ -2,10 +2,10 @@ import copy
 import pytest
 from typing import TypedDict
 
-from agere.utils.context import Context, ContextPieceTypeError, ContextTokenError, _find_position
-from agere.utils.context_models import OpenaiContextModel
-from agere.utils._context_model_base import ContextModelBase
-from agere.utils._tool_base import ToolsManagerInterface
+from Cyberforge.utils.context import Context, ContextPieceTypeError, ContextTokenError, _find_position
+from Cyberforge.utils.context_models import OpenaiContextModel
+from Cyberforge.utils._context_model_base import ContextModelBase
+from Cyberforge.utils._tool_base import ToolsManagerInterface
 
 
 @pytest.mark.parametrize(

@@ -1,1 +1,1 @@
-::: agere.utils.prompt_template
+::: Cyberforge.utils.prompt_template

@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import Mock, patch
 
-from agere.addons.qdrant_vector import AsyncQdrantVector, models
+from Cyberforge.addons.qdrant_vector import AsyncQdrantVector, models
 
 
 @pytest.fixture
@@ -10,7 +10,7 @@ def async_qdrant_client() -> AsyncQdrantVector:
 
 def test_set_embedding_model(async_qdrant_client: AsyncQdrantVector):
     # Action
-    with patch("agere.addons.qdrant_vector.AsyncQdrantClient.set_model") as mock_set_model:
+    with patch("Cyberforge.addons.qdrant_vector.AsyncQdrantClient.set_model") as mock_set_model:
         async_qdrant_client.set_embedding_model("model")
 
     # Assert
@@ -94,7 +94,7 @@ async def test_delete_collection(async_qdrant_client: AsyncQdrantVector):
 
 async def test_update_collection(async_qdrant_client: AsyncQdrantVector):
     # Action
-    with patch("agere.addons.qdrant_vector.AsyncQdrantClient.update_collection") as mock_update_collection:
+    with patch("Cyberforge.addons.qdrant_vector.AsyncQdrantClient.update_collection") as mock_update_collection:
         await async_qdrant_client.update_collection("test_collection", vectors_config=None)
 
     # Assert

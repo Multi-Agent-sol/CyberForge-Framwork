@@ -1,6 +1,6 @@
 import pytest
 
-from agere.commander import (
+from Cyberforge.commander import (
     CommanderAsync,
     Job,
     HandlerCoroutine,
@@ -8,7 +8,7 @@ from agere.commander import (
     tasker,
     PASS_WORD,
 )
-from agere.commander.edge import add_edge, add_conditional_edge
+from Cyberforge.commander.edge import add_edge, add_conditional_edge
 
 
 @pytest.fixture

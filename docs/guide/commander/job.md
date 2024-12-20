@@ -4,7 +4,7 @@ it as submitting a task to a superior. It is generally more suitable than a hand
 tasks that have a circular structure.
 
 
-To define a Job, you need to import `Job` from `agere.commander` and inherit it, implementing the required `task` method.
+To define a Job, you need to import `Job` from `Cyberforge.commander` and inherit it, implementing the required `task` method.
 The `task` method describes the specific tasks that the job needs to perform. In the task, you can execute the specific
 logic of the Job or return a handler.
 
@@ -19,4 +19,4 @@ handler within the Job to perform the task or directly return it as a handler.
 The task must be decorated with the `tasker` decorator, and the `tasker` decorator requires a password. Its content is
 (currently) `"I assure all time-consuming tasks are delegated externally"`. This is just to remind you not to place
 time-consuming tasks in the task to avoid blocking the commander. Of course, you don’t need to actually input this password;
-you just need to import `PASS_WORD` from `agere.commander` and use it.
+you just need to import `PASS_WORD` from `Cyberforge.commander` and use it.

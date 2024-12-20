@@ -1,1 +1,1 @@
-::: agere.addons.text_splitter
+::: Cyberforge.addons.text_splitter

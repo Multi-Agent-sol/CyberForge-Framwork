@@ -1,8 +1,8 @@
 import pytest
 from typing import TypedDict
 
-from agere.utils.tool_models import CustomToolModel, OpenaiToolModel
-from agere.utils.tool import ToolsManager, ToolsManagerInterface
+from Cyberforge.utils.tool_models import CustomToolModel, OpenaiToolModel
+from Cyberforge.utils.tool import ToolsManager, ToolsManagerInterface
 
 
 class ContextPiece(TypedDict):

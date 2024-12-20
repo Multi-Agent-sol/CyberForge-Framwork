@@ -18,14 +18,14 @@ from typing import Callable, Generic, Literal, TypedDict, overload, cast
 
 from ._context_model_base import ContextModelBase, ContextPiece
 from ._tool_base import ToolsManagerInterface, ToolMetadata, ToolKit
-from ._exceptions import AgereUtilsError
+from ._exceptions import CyberforgeUtilsError
 
 
-class ContextTokenError(AgereUtilsError):
+class ContextTokenError(CyberforgeUtilsError):
     """Raised when token validation fails."""
 
 
-class ContextPieceTypeError(AgereUtilsError):
+class ContextPieceTypeError(CyberforgeUtilsError):
     """Raised when the context piece type is incorrect."""
 
 

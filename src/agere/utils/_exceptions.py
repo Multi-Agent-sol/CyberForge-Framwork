@@ -1,2 +1,2 @@
-class AgereUtilsError(Exception):
-    """Base class for exceptions related to agere.utils."""
+class CyberforgeUtilsError(Exception):
+    """Base class for exceptions related to Cyberforge.utils."""

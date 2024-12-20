@@ -2,7 +2,7 @@
 The [requirements.txt](./requirements.txt) include all additional dependencies needed for all example programs.
 
 ## openai_chat_with_tools
-This example demonstrates how to build a conversation flow with tool-calling capabilities using Agere.
+This example demonstrates how to build a conversation flow with tool-calling capabilities using Cyberforge.
 To run this example, you need to set the environment variable `OPENAI_API_KEY` to your OpenAI API key.
 
 ### Dependencies

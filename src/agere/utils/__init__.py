@@ -18,7 +18,7 @@ from .tool import (
     tool_parameter,
     ToolsManager,
 )
-from ._exceptions import AgereUtilsError
+from ._exceptions import CyberforgeUtilsError
 from ._context_model_base import ContextModelBase
 from ._tool_base import (
     ParseResponseError,
@@ -32,7 +32,7 @@ from ._tool_base import (
 
 
 __all__ = [
-    "AgereUtilsError",
+    "CyberforgeUtilsError",
     "ContextModelBase",
     "ContextTokenError",
     "ContextPieceTypeError",

@@ -1,10 +1,10 @@
 # Node-Edge Pattern
-Agere is very flexible, and you can use the node+edge pattern to construct workflows.
+Cyberforge is very flexible, and you can use the node+edge pattern to construct workflows.
 You can create various custom edge types through callbacks.
 
 Defining an edge is simple, and here is an example code for `add_edge`:
 ```python
-from agere.commander._commander import Job, HandlerCoroutine
+from Cyberforge.commander._commander import Job, HandlerCoroutine
 
 
 def add_edge(
@@ -56,7 +56,7 @@ You can customize your required edge types following this method.
 
 ## Simple Edges and Conditional Edges
 
-Currently, Agere offers two pre-set common edge types: `add_edge` and `add_conditional_edge`.
+Currently, Cyberforge offers two pre-set common edge types: `add_edge` and `add_conditional_edge`.
 
 `add_edge` adds a simple edge between two nodes. After the preceding node completes execution,
 the following node will automatically execute. Its function signature is
@@ -86,7 +86,7 @@ different outcomes of the preceding node. `data` is a resource object.
 You can add multiple edges to the same node, allowing them to execute simultaneously. For example,
 define the following nodes:
 ```python
-from agere.commander import (
+from Cyberforge.commander import (
     CommanderAsync,
     Job,
     HandlerCoroutine,
@@ -94,7 +94,7 @@ from agere.commander import (
     tasker,
     PASS_WORD,
 )
-from agere.commander.edge import add_edge, add_conditional_edge
+from Cyberforge.commander.edge import add_edge, add_conditional_edge
 
 
 @handler(PASS_WORD)
@@ -152,10 +152,10 @@ commander.run_auto(job_1)
 ```
 Thus, the execution process will look as follows:
 <figure markdown>
-  ![node-edge pattern](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/agere/node_edge_example_1.png){ width="400" }
+  ![node-edge pattern](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/Cyberforge/node_edge_example_1.png){ width="400" }
   <figcaption>Multiple edges executed simultaneously.</figcaption>
 </figure>
 <figure markdown>
-  ![node-edge pattern](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/agere/node_edge_example_2.png){ width="400" }
+  ![node-edge pattern](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/Cyberforge/node_edge_example_2.png){ width="400" }
   <figcaption>Multi-path workflow.</figcaption>
 </figure>

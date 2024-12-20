@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Have you checked closed issues? https://github.com/happyapplehorse/agere/issues?q=is%3Aissue+is%3Aclosed
+Have you checked closed issues? https://github.com/happyapplehorse/Cyberforge/issues?q=is%3Aissue+is%3Aclosed
 
 Please give a brief but clear explanation of the issue.
 

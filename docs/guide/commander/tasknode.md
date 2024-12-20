@@ -1,4 +1,4 @@
-When using Agere to build an agent, you only need to consider what the current task is and what the next task will be.
+When using Cyberforge to build an agent, you only need to consider what the current task is and what the next task will be.
 Once you define each task, run a commander and add the tasks to it. The commander will automatically schedule and execute
 these tasks for you.
 

@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import Mock
 
-from agere.utils.llm_async_converters import LLMAsyncAdapter, CallbackDict
+from Cyberforge.utils.llm_async_converters import LLMAsyncAdapter, CallbackDict
 
 
 @pytest.fixture

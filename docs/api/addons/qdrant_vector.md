@@ -1,1 +1,1 @@
-::: agere.addons.qdrant_vector
+::: Cyberforge.addons.qdrant_vector

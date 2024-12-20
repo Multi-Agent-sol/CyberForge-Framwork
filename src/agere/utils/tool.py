@@ -19,10 +19,10 @@ from ._tool_base import (
     ToolModelInterface,
     ToolMetadata,
 )
-from ._exceptions import AgereUtilsError
+from ._exceptions import CyberforgeUtilsError
 
 
-class ToolError(AgereUtilsError):
+class ToolError(CyberforgeUtilsError):
     """Raised when encountering an error related to the tool."""
 
 
