@@ -67,14 +67,10 @@ pip install Cyberforge
 ```
 
 # How to Use
-Define Jobs and/or handlers **➔** Create a commander to run them
-
-[Getting started](https://happyapplehorse.github.io/Cyberforge/getting_started/)  
-[Guide](https://happyapplehorse.github.io/Cyberforge/guide/framework/)  
-🎬[Tutorial-zh](https://www.bilibili.com/video/BV1q6421c71z) 
+Define Jobs and/or handlers **➔** Create a commander to run them 
 
 ## Cyberforge Workflow Demonstration Example
-![Cyberforge workflow demonstration animation](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/Cyberforge/Cyberforge_getting_started_animation.gif)
+![Cyberforge workflow demonstration animation](https://github.com/Multi-Agent-sol/CyberForge-Framwork/blob/main/docs/agere_getting_started_animation.gif)
 
 Above is a simple demonstration animation of a conversational agent's workflow that can call upon tools,
 briefly illustrating the principles of Cyberforge.
@@ -84,34 +80,34 @@ We have defined two Jobs: a ChatJob, which is used to initiate a new conversatio
 Additionally, we defined three handlers: a response_handler, for parsing GPT's reply messages; a user_handler, for displaying messages sent to the user; and a
 tool_call_handler, for executing function calls. Furthermore, we added a callback to the ResponseJob to initiate the next round of conversation upon its completion.
 Lastly, a commander is utilized to execute it.
-For a detailed tutorial on it, please see [Getting started](https://happyapplehorse.github.io/Cyberforge/getting_started/).
+For a detailed tutorial on it, please see 
 
 ## Architecture Overview
-![Cyberforge_architecture](https://raw.githubusercontent.com/happyapplehorse/happyapplehorse-assets/main/Cyberforge/Cyberforge_architecture.png)
+![Cyberforge_architecture](https://github.com/Multi-Agent-sol/CyberForge-Framwork/blob/main/docs/agere_hierarchical_structure.png)
 
 ## Basic Concepts
 
-### [TaskNode](https://happyapplehorse.github.io/Cyberforge/guide/tasknode/)
+### [TaskNode]
 Includes Commander, Job, and handler. Each TaskNode has one parent and 0-n children.
 These nodes form a tree structure, where each node determines its own task completion
 based on the status of all its child nodes.
 
-### [Commander](https://happyapplehorse.github.io/Cyberforge/guide/commander/)
+### [Commander]
 The commander is a node used for automatically scheduling and executing tasks, typically serving as the root node for all other nodes. Once you have defined some
 Jobs and handlers, by assigning the initial entry work to it, it can automatically organize and execute these tasks for you.
 
-### [Job](https://happyapplehorse.github.io/Cyberforge/guide/job/)
+### [Job]
 A Job is an object that packages a specific task along with the resources required to execute that task. It's as if it's reporting to a higher authority,
 saying: "I have such and such task to do, involving these specific actions. Here are the materials you need, the task is yours now, the rest is not my concern."
 That's the gist of it.
 
-### [handler](https://happyapplehorse.github.io/Cyberforge/guide/handler/)
+### [handler]
 A handler is a function or method, similar to a coroutine function, that returns a handler object. This handler object can be called by other task nodes or can
 be directly awaited. It's as if it's delegating to a subordinate, saying: "I have this task, go and do it for me."
 
-### [Callback](https://happyapplehorse.github.io/Cyberforge/guide/callback/)
+### [Callback]
 Callbacks can be added at various stages of a task, such as: task start, task completion,
 encountering exceptions, task termination, Commander ending, etc.
 
 # License
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [Apache 2.0](./LICENSE).
